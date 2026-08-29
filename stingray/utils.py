@@ -77,7 +77,8 @@ except ImportError:
     def generic(*args, **kwargs):
         return None
 
-    float32 = float64 = int32 = int64 = boolean = generic
+    float32 = float64 = int32 = int64 = generic
+    boolean = generic  # pragma: no cover
 
     def prange(x):
         return range(x)
